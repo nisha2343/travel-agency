@@ -1,0 +1,270 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    height: 122px;
+    width: 100vw;
+    background-color: black;
+}
+nav{
+    display: flex;
+}
+nav ul{
+    height: 100px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+nav ul li h1 {
+    list-style: none;
+    padding: 0 15px;
+    color: white;
+}
+
+input{
+    height: 23px;
+    width: 330px;
+    margin: 43px 0;
+}
+.btn {
+    padding: 5px 15px;
+    color: white;
+    background-color: rgb(16, 93, 246);
+    border: 2px solid white;
+    border-radius: 9px;
+    cursor: pointer;
+}
+.btn:active{
+    background-color: blue;
+}
+nav ul li h3{
+    list-style: none;
+    color: white;
+    padding: 0 25px;
+
+}
+nav ul li a {
+    list-style: none;
+    color: white;
+    padding: 0 25px;
+    
+}
+.iteam img{
+   height: 100px;
+   width: 100px;
+   border-radius: 50%;
+   border: 3px solid black;
+}
+
+.iteam{
+    display: inline-flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 15px;
+}
+
+.btne {
+    margin: 0 124px;
+    padding: 5px 10px;
+    color: white;
+    background-color:red;
+    border: 2px solid white;
+    border-radius: 9px;
+    cursor: pointer;
+}
+.btne:active{
+    background-color: rgb(87, 8, 8);
+}
+.trip{
+    display: inline-flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 15px 15px;
+    
+}
+.trip img{
+    height: 250px;
+    width: 365px;
+    border: 3px solid black;
+    margin: 0 9px;
+    border-radius: 8%;
+ }
+
+.lider {
+    margin: 10px 0 24px 0;
+    text-align: center;
+    
+}
+
+.line{
+    text-align: center;
+}
+ul li:hover{
+    color: wheat;
+}
+ul li :active{
+    color: black;
+}
+.book h1{
+    margin: 20px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #f0ecec; */
+}
+.india h1{
+    margin: 20px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.iteam:hover{
+    /* border-radius: 50%; */
+    box-shadow:1px 1px 8px #d43cff; 
+    background-color: #f9fdff;
+    transform: translateY(-10px);
+}
+.trip:hover{
+    border-radius: 8%;
+    box-shadow: 1px 1px 8px #d43cff;
+    background-color: #f9fdff;
+    transform: translateY(-25px);
+}
+.book h1:hover{
+    box-shadow: 1px 1px 8px #262121;
+    background-color: #f9fdff;
+    transform: translateY(-2px);
+}
+.india h1:hover{
+    box-shadow: 1px 1px 8px #262121;
+    background-color: #f9fdff;
+    transform: translateY(-2px);
+}
+.container h1:hover{
+    box-shadow: 1px 1px 8px #262121;
+    background-color: #f9fdff;
+    transform: translateY(-2px);
+}
+
+footer {
+    height: 12vh;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main {
+    /* height: 80vh; */
+    display: flex;
+    color: rgb(6, 5,6);
+    height: 0vh;
+}
+
+@keyframes rotate {
+    100%{
+        transform: translate(860px , 100%);
+    }
+}
+
+@keyframes rotateResponsive {
+    100% {
+        transform: translate(50%, 50%);
+    }
+}
+
+main img{
+    animation: rotate 2s ease-in-out infinite;
+} 
+
+@media only screen and (max-width: 768px) {
+    nav ul {
+        justify-content: center;
+    }
+
+    .search {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    input {
+        width: 100%;
+        max-width: none;
+    }
+
+    .btn {
+        margin-top: 10px;
+    }
+
+    .trip {
+        flex-direction: row;
+        margin: 15px 0;
+    }
+
+    .trip img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+
+/* Header styling for larger screens */
+header {
+    height: 122px;
+    width: 100vw;
+    background-color: black;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li h1 {
+    padding: 0 15px;
+    color: white;
+}
+
+input {
+    width: 330px;
+    margin: 10px 0;
+}
+
+.btn {
+    margin: 10px 0;
+}
+
+/* Responsive styling for smaller screens */
+@media only screen and (max-width: 768px) {
+    header {
+        height: auto;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul {
+        margin-top: 10px;
+    }
+
+    input {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .btn {
+        margin-top: 10px;
+    }
+}
